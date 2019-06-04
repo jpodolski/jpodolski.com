@@ -1,1 +1,2 @@
-# A personal website, at jpodolski.com
+# A personal website
+located at jpodolski.com
