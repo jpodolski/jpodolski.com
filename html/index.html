@@ -1,17 +1,86 @@
 <!DOCTYPE html>
 <html>
+<link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Raleway&display=swap" rel="stylesheet"> 
+
 <head>
-<title>booyah</title>
+<link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Raleway&display=swap" rel="stylesheet"> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root {
+	--foreground:#232020;
+	--background:#fff5d5;
+	--accent:#bc6d34;
+	--color1:#88958d;
+	--color2:#384d48;
+	--color3:#FF0000;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Abel', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  font-family: Abel, sans-serif;
+}
+.parallax {
+  /* The image used */
+  background-image: url("img/bg.jpg");
+
+  /* Set a specific height */
+  min-width: 100px;
+	min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--foreground);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: var(--background);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: var(--color1);
+}
+
+.active {
+  background-color: var(--accent);
+}
+	h1 {
+		color: var(--foreground);
+	}
+</style>
 </head>
 <body>
-<center>
-<h1> This is a landing page </h1>
-The site jpodolski.com is currently under construction <br>
-<img src="img/img.jpeg" alt="fox" height="150" width="100">
-<br>
-If you need to contact me, please email 
-<a href="mailto:jpodolski@protonmail.com">jpodolski@protonmail.com</a>
+<ul>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#info">Info</a></li>
+  <li style="float:left"><a class="active" href="#home">jpodolski.com</a></li>
+</ul>
+  <div class="parallax"></div>
 
-</center>
+		  <h1 class="text-center">Jeff Podolski</h1>
+          <p class="text-center">Creative Audio, Media, and Code</p>
+
+	
+
 </body>
 </html>
