@@ -1,71 +1,128 @@
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Raleway&display=swap" rel="stylesheet"> 
-
+<link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Raleway&display=swap" rel="stylesheet">
 <head>
-<link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Raleway&display=swap" rel="stylesheet"> 
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 :root {
-	--foreground:#232020;
-	--background:#fff5d5;
-	--accent:#bc6d34;
-	--color1:#88958d;
-	--color2:#384d48;
-	--color3:#FF0000;
+ --foreground:#232020;
+ --background:#fff5d5;
+ --accent:#bc6d34;
+ --color1:#88958d;
+ --color2:#384d48;
+ --color3:#98A59d;
 }
-
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-family: 'Abel', sans-serif;
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
-  font-family: Abel, sans-serif;
+	font-family: 'Quicksand', sans-serif;
+	font-family: 'Abel', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	font-family: Abel, sans-serif;
+	background: var(--foreground);
+}
+a {
+	color: var(--accent);
+	text-decoration: none;
+	padding: 5px 5px;
+}
+a:hover {
+	color: var(--color3);
+  background-color: var(--color2);
+	padding: 5px 5px;
 }
 .parallax {
-  /* The image used */
-  background-image: url("img/bg.jpg");
-
-  /* Set a specific height */
-  min-width: 100px;
+	/* The image used */
+	background-image: url("img/bg.jpg");
+	/* Set a specific height */
+	min-width: 100px;
 	min-height: 400px;
-  /* Create the parallax scrolling effect */
-  background-attachment:fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	perspective: 20px;
 }
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: var(--foreground);
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: var(--foreground);
 }
-
 li {
-  float: right;
+	float: right;
 }
-
 li a {
-  display: block;
-  color: var(--background);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	display: block;
+	color: var(--background);
+	text-align: center;
+	padding: 5px 5px;
+	text-decoration: none;
 }
-
 li a:hover:not(.active) {
-  background-color: var(--color1);
+	background-color: var(--color1);
+}
+.active {
+	background-color: var(--accent);
+}
+.test2 {
+	background-color: "#FF0000";
+	float: right;
+	text-align: left;
+	padding-right: 200px;
+}
+h1 {
+	font-size: 40pt;
+	font-family: Abel, italic;
+	text-align: left;
+	color: var(--background);
+}
+h2 {
+	font-size: 20pt;
+	color: var(--color3)
+}
+h3 {
+	font-size: 12pt;
+	font-family: Quicksand, italic;
+	line-height: 30px;
+	text-align: left;
+	color: var(--accent);
+}
+h4 {
+	font-size: 18pt;
+	font-family: Abel;
+	line-height: 20px;
+	text-align: left;
+	color: var(--foreground);
+}
+p {
+	text-align: left;
+	position: relative;
+	color: #333030;
 }
 
-.active {
-  background-color: var(--accent);
+.a {
+	background: var(--color3);
 }
-	h1 {
-		color: var(--foreground);
-	}
+
+.test {
+	min-height: 200px;
+	max-width: 30%;
+	margin-top: -600px;
+	position: relative;
+	margin-left: 115px;
+	padding-top: 285px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+	background: rgba(35, 32, 32, 0.75)
+}
+.accent_spacer {
+	background-color: var(--accent);
+	background-attachment: fixed;
+	min-width: 100px;
+	min-height: 200px;		
+}
 </style>
 </head>
 <body>
@@ -75,12 +132,24 @@ li a:hover:not(.active) {
   <li><a href="#info">Info</a></li>
   <li style="float:left"><a class="active" href="#home">jpodolski.com</a></li>
 </ul>
+<div>
   <div class="parallax"></div>
-
-		  <h1 class="text-center">Jeff Podolski</h1>
-          <p class="text-center">Creative Audio, Media, and Code</p>
-
-	
+<div>
+	<div class="test2"><h4>Unfortunately, this site doesn't quite exist yet!</h4>
+	<p>If you need to get in touch with me, you can
+	<br> contact me on the platforms on the left.</p></div>
+	<div class="accent_spacer"></div>
+	</div>
+<div class="test">
+ 
+  <h1>Jeff Podolski</h1>
+	<h2>Creative Audio, Media, and Code<br></h2>
+	<h3>
+	<a href="mailto:jpodolski@protonmail.com">jpodolski@protonmail.com</a> <br>
+	<a href="http://github.com/jpodolski">github.com/jpodolski</a><br>
+	<a href="http://last.fm/user/jpodolski">last.fm/jpodolski</a></h3>
+</div>
+	</div>
 
 </body>
 </html>
