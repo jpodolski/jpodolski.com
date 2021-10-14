@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
+<style>
+div {
+  animation-name: spinny;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spinny {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+</style>
 <head>
 <title>booyah</title>
 </head>
 <body>
 <center>
-<h1> This is a landing page </h1>
-The site jpodolski.com is currently under construction <br>
-<img src="img/img.jpeg" alt="fox" height="150" width="100">
-<br>
+<h1> Hey there </h1>
+The site jpodolski.com is currently under construction, so this is all you get for now: <br><br>
+<div><img src="img/img.jpeg" alt="fox" height="150" width="100"></div>
+<br><br>
 If you need to contact me, please email 
 <a href="mailto:jpodolski@protonmail.com">jpodolski@protonmail.com</a>
 

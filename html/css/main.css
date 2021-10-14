@@ -18,6 +18,20 @@
     line-height: 1.4;
 }
 
+div {
+  animation-name: spinny;
+  animation-duration: 2s;
+}
+
+@keyframes spinny {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
