@@ -16,12 +16,29 @@
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    overflow-y: scroll;
 }
 
-div {
+.roa {
   animation-name: spinny;
   animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
+.email:hover {
+    background-color: #fffd85;
+
+}
+/*.roa:hover {
+  animation-name: spinny;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+*/
+
+
 
 @keyframes spinny {
   from {
